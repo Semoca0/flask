@@ -74,7 +74,8 @@ def upload_file():
             return '''<h2>La Imagen que acabas de Ingresar Corresponde a un '''+b+''' y Estoy un '''+c+'''%  Seguro</h2>'''
         else:
             return 'No allowed extension'
-
+    else 
+         return jsonify({"Choo Choo": "Welcome to your Flask app  Jaun🚅"})
 
 
 if __name__ == '__main__':
