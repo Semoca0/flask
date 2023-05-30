@@ -20,10 +20,6 @@ def index():
 
 model = ResNet50(weights='imagenet')
 
-
-# flask is used to create a web service, where the images are recognized and their name and percentage of success are returned
-app = Flask(__name__)
-
 UPLOAD_FOLDER = "uploads"
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 MAX_CONTENT_LENGTH = 16 * 1024 * 1024
