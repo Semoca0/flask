@@ -70,9 +70,10 @@ def upload_file():
             for i in a[1]:
                 b = i[1]
                 c = str(int(round(i[2] * 100)))
-
+            print('paso7')
             return jsonify({"data": 'La Imagen que acabas de Ingresar Corresponde a un ' + b + ' y Estoy un ' + c + '% Seguro'})
         else:
+             print('paso8')
              return jsonify({"Choo Choo": "ha ocurrido un error🚅"})
     else:  # GET request
         return jsonify({"error": "GET request not supported for this endpoint"})
