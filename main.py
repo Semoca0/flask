@@ -7,7 +7,6 @@ from werkzeug.utils import secure_filename
 import os
 import tempfile
 
-import matplotlib.pyplot as plt
 
 app = Flask(__name__)
 
