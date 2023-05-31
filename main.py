@@ -70,9 +70,8 @@ def upload_file():
 
             return jsonify({"data": 'La Imagen que acabas de Ingresar Corresponde a un ' + b + ' y Estoy un ' + c + '% Seguro'})
         else:
-            return 'No allowed extension'
-    else:
-        return jsonify({"Choo Choo": "Welcome to your Flask app Jaun🚅"})
+             return jsonify({"Choo Choo": "ha ocurrido un error🚅"})
+   
 
 if __name__ == '__main__':
     app.run(debug=True, port=os.getenv("PORT", default=5000))
