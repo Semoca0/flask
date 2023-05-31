@@ -9,3 +9,4 @@ tensorflow
 numpy
 keras
 Pillow
+flask_cors
