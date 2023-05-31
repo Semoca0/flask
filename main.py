@@ -6,10 +6,10 @@ from flask import Flask, request, jsonify
 from werkzeug.utils import secure_filename
 import os
 import tempfile
-
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app, resources={r"/*": {"origins": "*"}})
 @app.route('/')
 def index():
     return jsonify({"Choo Choo": "Welcome to your Flask app 🚅"})
